@@ -1,0 +1,104 @@
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.billeder {
+  @media (width > 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.billedeteskt {
+  @media (width > 800px) {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.Hverdag {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.restaurant-billede h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.restaurant-billede img {
+  height: 360px;
+}
+
+.restaurant-tekst {
+  margin-top: 0;
+}
+
+/* DESKTOP */
+@media (min-width: 801px) {
+  .Hverdag {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .restaurant-billede:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .restaurant-billede:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .restaurant-tekst:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .restaurant-tekst:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+
+/* MOBIL */
+@media (max-width: 800px) {
+  .Hverdag {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .restaurant-billede img {
+    object-fit: cover;
+  }
+
+  .restaurant-tekst {
+    grid-column: span 1;
+  }
+}
+
+.billederluksus {
+  @media (width > 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (width < 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+    .order {
+      display: grid;
+
+      grid-column: 1 / -1;
+    }
+  }
+}

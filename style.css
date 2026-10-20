@@ -1,0 +1,147 @@
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.knap {
+  border-radius: 20px;
+  padding: 10px 25px;
+  text-align: center;
+  display: block;
+  width: fit-content;
+  margin: 4px auto;
+  font-family: limelight;
+  text-decoration: none;
+  font-size: medium;
+  background-color: #08791e;
+  color: #e6e5e5;
+}
+
+footer {
+  background-color: #d4446b36;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+body {
+  background-color: #5f070b;
+}
+
+p {
+  color: #f0e6da;
+  text-align: center;
+  margin: auto;
+  padding: 30px;
+  color: #f0e6da;
+  font-family: nunito;
+  background-color: #d34b6f36;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+h1 {
+  color: #f0e6da;
+  text-align: center;
+  font-family: limelight;
+}
+
+h2 {
+  color: #f0e6da;
+  text-align: center;
+  font-family: coda;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #d4446b36;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid white;
+
+  li {
+    margin-right: 0px;
+  }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px;
+    color: #d8cece;
+    text-decoration: none;
+    transition: color 0.3s;
+    text-align: end;
+    &:hover {
+      color: #08791e;
+    }
+  }
+  @media (width < 800px) {
+    display: none;
+  }
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #5f070b;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+
+  @media (width < 800px) {
+    display: block;
+    background-color: transparent;
+    border: 0;
+
+    &.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      transition: 0.2s linear;
+    }
+
+    &.active .line:nth-child(2) {
+      opacity: 0;
+      transition: 0.15s linear;
+    }
+
+    &.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+      transition: 0.2s linear;
+    }
+  }
+}
+header {
+  background-color: #d4446b36;
+}
+.logo {
+  width: 30px;
+  height: auto;
+}
+
+h2 {
+  color: #08791e;
+}
+
+.pastaicon {
+  width: 40px;
+  height: auto;
+}
+restaurant-billede {
+  width: 15px;
+}
